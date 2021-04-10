@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="utf-8">
+    <title>Credits</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="website.css">
+    <script src="evenandodd.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <ul id="menu">
+            <li><a href="index.html"><span>Home</span></a>
+            </li>
+            <li><a onclick="myFunction()" href="#myModal4"><span>Instructions</span></a>
+                <li><a href="oneplayer.html"><span>One Player</span></a>
+                </li>
+                <li><a href="twoplayer.html"><span>Two Player</span></a>
+                </li>
+                <li><a href="credits.html"><span>Credits</span></a>
+                </li>
+        </ul>
+        <div id="myModal4" class="modal" style="display:none;">
+            <div class="modal-content">
+                <div class="close" onclick="hide3();">&times;</div>
+                <form id="frm1">
+                    <h6>Instructions</h6>
+                    <br>
+                    <li>The game is organized around ten digits (0-9) and four mathematical operations: +, -, *, / (addition, subtraction, multiplication, division). </li>
+                    <br>    
+                    <li>The first player (Player 1) will be even and the second player (Computer or Player 2) will be odd. Player 1 has to try and end up with an even number at the end of the game, and Player 2 should try and end up with an odd number. </li>
+                    <br>    
+                    <li>From the start, Player 1 plays a number, then Player 2 plays a number and a function. Neither player can multiply or divide by 0. </li>
+                    <br>    
+                    <li>You can only use a number once. Each player plays a number and an operation in turn. The game finishes when all the numbers are used. </li>
+                    <br>    
+                    <li>Good Luck with Even and Odd! </li>
+                    <br>
+                </form>
+            </div>
+        </div>
+        <div class="box15">
+            <img src="images/photo.jpg" alt="credits">
+            <div id="text12">
+                All the graphics, content, screenshots and code except the code borrowed from another website (mentioned in the code for designing the menu) were created by me (Alireza Tahmasebi). I included the link to the picture (inserted above) I've gotten from Pixabay. Also, you can find the link to the copyright rules of Pixabay below. Lastly, I got the sound effects from a site called Free Sound Effects.
+            </div>
+            <ul id="text11">
+            
+                <li><a href="https://pixabay.com/en/camera-olympus-digital-camera-541213/" target="_blank" class=link1>The image on the credits page</a>
+                </li>
+                
+                <li><a href="https://pixabay.com/en/service/terms/" target="_blank" class=link1>Usage rules for pictures on Pixabay</a>
+                </li>
+
+                <li><a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Permissions/default.aspx?5ffe264e-ac9b-4ba3-8dd1-941afa5fe9b0=True" target="_blank" class=link1> Use of Microsoft copyrighted content (Including screenshots)</a>
+                </li>
+							
+				<li><a href="http://codepen.io/Dreamdealer/pen/yEmwd" target="_blank" class=link1> The navigation bar code (Author: Johan van Tongeren)</a>
+                </li>	
+                
+                <li><a href="https://www.freesoundeffects.com/" target="_blank" class=link1>Sounds effects</a>
+                </li>
+
+            </ul>
+            <br/>
+            <div class="box15_ribbon"></div>
+        </div>
+
+        <div id="lightbox" class="hidden">
+        </div>
+        <div id="positionBigImage">
+            <div id="boundaryBigImage" class="hidden">
+                <a href="javascript:displayLightBox(-1)">
+                    <img id="x" src="images/x.png" alt="close">
+                </a>
+                <img id="bigImage" src="images/Instructions.png" alt="background">
+            </div>
+        </div>
+
+        <div id="footer2">
+            <a href="credits.html" class=link>
+        &copy; 2020 Alireza Tahmasebi
+    </a>
+        </div>
+    </div>
+</body>
+
+</html>

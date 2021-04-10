@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="utf-8">
+    <title>Game: Even and Odd</title>
+    <link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="website.css">
+    <script src="evenandodd.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <ul id="menu">
+            <li><a href="index.html"><span>Home</span></a>
+            </li>
+            <li><a onclick="myFunction()" href="#myModal4"><span>Instructions</span></a>
+            </li>
+            <li><a href="oneplayer.html"><span>One-Player</span></a>
+            </li>
+            <li><a href="twoplayer.html"><span>Two-Player</span></a>
+            </li>
+            <li><a href="credits.html"><span>Credits</span></a>
+            </li>
+        </ul>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <div class="close" onclick="hide();play3();">&times;</div>
+                <form id="frm1">
+                    <h5>Two-Player Game</h5>
+                    <br>
+                    <h4>First Player (Even)</h4>
+                    <br>
+                    <h1>VS</h1>
+                    <h4>Second Player (Odd)</h4>
+                    <br>
+
+                </form>
+            </div>
+        </div>
+        <div id="myModal4" class="modal" style="display:none;">
+            <div class="modal-content">
+                <div class="close" onclick="hide3();">&times;</div>
+                <form id="frm1">
+                    <h6>Instructions</h6>
+                    <br>
+                    <li>The game is organized around ten digits (0-9) and four mathematical operations: +, -, *, / (addition, subtraction, multiplication, division). </li>
+                    <br>    
+                    <li>The first player (Player 1) will be even and the second player (Computer or Player 2) will be odd. Player 1 has to try and end up with an even number at the end of the game, and Player 2 should try and end up with an odd number. </li>
+                    <br>    
+                    <li>From the start, Player 1 plays a number, then Player 2 plays a number and a function. Neither player can multiply or divide by 0. </li>
+                    <br>    
+                    <li>You can only use a number once. Each player plays a number and an operation in turn. The game finishes when all the numbers are used. </li>
+                    <br>    
+                    <li>Good Luck with Even and Odd! </li>
+                    <br>
+                </form>
+            </div>
+        </div>
+        
+        <div id="myModal3" class="modal" style="display:none;">
+            <div class="modal-content">
+                <div class="close" onclick="hide2();twoplayer();">&times;</div>
+                <form id="frm1">
+                    <h4 id="Message">Thanks for playing the game!</h4>
+                </form>
+            </div>
+        </div>
+
+        <div id="zero" class="num" onclick="doTurntwo('zero')">0</div>
+        <div id="one" class="num" onclick="doTurntwo('one')">1</div>
+        <div id="two" class="num" onclick="doTurntwo('two')">2</div>
+        <div id="three" class="num" onclick="doTurntwo('three')">3</div>
+        <div id="four" class="num" onclick="doTurntwo('four')">4</div>
+        <div id="five" class="num" onclick="doTurntwo('five')">5</div>
+        <div id="six" class="num" onclick="doTurntwo('six')">6</div>
+        <div id="seven" class="num" onclick="doTurntwo('seven')">7</div>
+        <div id="eight" class="num" onclick="doTurntwo('eight')">8</div>
+        <div id="nine" class="num" onclick="doTurntwo('nine')">9</div>
+
+        <br>
+        <div id="add" class="op" onclick="doMath1('add')">+</div>
+        <div id="subtract" class="op" onclick="doMath1('subtract')">-</div>
+        <div id="multiply" class="op" onclick="doMath1('multiply')">*</div>
+        <div id="divide" class="op" onclick="doMath1('divide')">/</div>
+
+        <br>
+        <h2 id="command"><span id="currentplayer">First Player</span>,
+	    <span id="instruction">pick a number</span></h2>
+
+        <div class="output">Current Total:</div>
+        <div id="currenttotal">0.0</div>
+
+        <div id="lightbox" class="hidden">
+        </div>
+        <div id="positionBigImage">
+            <div id="boundaryBigImage" class="hidden">
+                <a href="javascript:displayLightBox(-1)">
+                    <img id="x" src="images/x.png" alt="close">
+                </a>
+                <img id="bigImage" src="images/background1.jpg" alt="background">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer2">
+        <a href="credits.html" class=link>
+        &copy; 2020 Alireza Tahmasebi
+    </a>
+    </div>
+
+</body>
+
+</html>

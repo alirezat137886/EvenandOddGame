@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Game: Even and Odd</title>
+    <link rel="stylesheet" href="evenandodd.css">
+    <script src="evenandodd.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="banner">
+            <div class="inner">
+                <h2>Game: Even and Odd</h2>
+                <p id="message">Welcome to Even and Odd.
+                    <br/> A singleplayer/multiplayer game.
+                    <br/> Let's get started!
+                </p>
+                <ul>
+                    <li><a class="button" href="oneplayer.html">One-Player</a><a class="button" href="twoplayer.html">Two-Player</a>
+                    <a class="button" onclick="myFunction()">Instructions</a>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+        <div id="myModal4" class="modal" style="display:none;">
+            <div class="modal-content">
+                <div class="close" onclick="hide3();">&times;</div>
+                <form id="frm1">
+                <ul>
+                    <h6>Instructions</h6>
+                    <br>
+                    <li>The game is organized around ten digits (0-9) and four mathematical operations: +, -, *, / (addition, subtraction, multiplication, division). </li>
+                    <br>    
+                    <li>The first player (Player 1) will be even and the second player (Computer or Player 2) will be odd. Player 1 has to try and end up with an even number at the end of the game, and Player 2 should try and end up with an odd number. </li>
+                    <br>    
+                    <li>From the start, Player 1 plays a number, then Player 2 plays a number and a function. Neither player can multiply or divide by 0. </li>
+                    <br>    
+                    <li>You can only use a number once. Each player plays a number and an operation in turn. The game finishes when all the numbers are used. </li>
+                    <br>    
+                    <li>Good Luck with Even and Odd! </li>
+                    <br>
+                </form>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="credits.html" class=link>
+        &copy; 2020 Alireza Tahmasebi
+    </a>
+        </div>
+ 
+    </div>
+
+</body>
+
+</html>
