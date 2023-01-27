@@ -4,3 +4,4 @@
 3. From the start, Player 1 plays a number, then Player 2 plays a number and a function. Neither player can multiply or divide by 0.
 4. You can only use a number once. Each player plays a number and an operation in turn. The game finishes when all the numbers are used.
 5. Good Luck with Even and Odd! 
+Game Link: https://alirezatahmasebi.github.io/Even-and-Odd-Game/
